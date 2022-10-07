@@ -1,0 +1,12 @@
+import sys
+import numpy as np
+
+def main(text):
+
+    duplicated_words = sys.argv[1:]
+    removed = np.unique(duplicated_words)
+    rev = np.sort(removed)[::-1]
+    list_conv = rev.tolist()
+    print(list_conv)
+
+(main(sys.argv[1:]))
